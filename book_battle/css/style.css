@@ -1,0 +1,15 @@
+.champion2020 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophy {
+    padding: 0 40px;
+    width: 30px;
+}
+
+.trophy img{
+    width: 100%;
+}
