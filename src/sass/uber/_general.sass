@@ -1,6 +1,6 @@
-header
+.u-header
     position: relative
-    nav
+    .u-nav
         position: fixed
         z-index: 100
         width: 100%
@@ -71,13 +71,13 @@ header
             border-radius: 4px
             background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
             +btn_hover
-.humburger
+.u-humburger
     display: none
-.promo
+.u-promo
     padding: 150px 0 0
     z-index: -1
     min-height: 750px
-    background: url("/img/promo_bg.jpg") center (center / cover) no-repeat
+    background: url("../img/uber/promo_bg.jpg") center (center / cover) no-repeat
     &_title
         color: #ffffff
         font-size: 60px
@@ -162,7 +162,7 @@ header
 .mobile
     min-height: 864px
     padding: 48px 0 80px
-    background: url('../img/mobile_bg.jpg') center center/cover no-repeat
+    background: url('../img/uber/mobile_bg.jpg') center center/cover no-repeat
     .row
         margin-top: 20px
     &_item
@@ -212,22 +212,22 @@ header
                     background: $second-color
 
     &_item_1
-        background: url('../img/mobile_item_1.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_1.jpg') center center/cover no-repeat
     &_item_2
-        background: url('../img/mobile_item_2.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_2.jpg') center center/cover no-repeat
     &_item_3
-        background: url('../img/mobile_item_3.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_3.jpg') center center/cover no-repeat
     &_item_4
-        background: url('../img/mobile_item_4.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_4.jpg') center center/cover no-repeat
     &_item_5
-        background: url('../img/mobile_item_5.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_5.jpg') center center/cover no-repeat
     &_item_6
-        background: url('../img/mobile_item_6.jpg') center center/cover no-repeat
+        background: url('../img/uber/mobile_item_6.jpg') center center/cover no-repeat
 
 .option
     min-height: 896px
     padding-top: 57px
-    background: url('../img/option_bg.jpg') center center/cover no-repeat
+    background: url('../img/uber/option_bg.jpg') center center/cover no-repeat
     .label
         background: #fff
         color: #000000
@@ -277,20 +277,20 @@ header
                 display: block
                 width: 21px
                 height: 20px
-                background: url('../icons/check_blue.png') center center/cover no-repeat
+                background: url('../icons/uber/check_blue.png') center center/cover no-repeat
 
     &_list__red
         color: $second-color
         li
             &::before
-                background: url('../icons/check_red.png') center center/cover no-repeat
+                background: url('../icons/uber/check_red.png') center center/cover no-repeat
     &_descr
         color: #1ca8c3
         font-weight: 300
 .world
     min-height: 717px
     padding: 49px 0
-    background: url('../img/world_bg.jpg') center center/cover no-repeat
+    background: url('../img/uber/world_bg.jpg') center center/cover no-repeat
     .label
         background: #fff
         color: #000000
@@ -306,7 +306,7 @@ header
         color: #1fbad6
         font-size: 15px
         text-transform: uppercase
-.footer
+.u-footer
     padding: 14px 0 0
     .devider
         margin: 0 auto
