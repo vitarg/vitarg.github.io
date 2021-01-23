@@ -1,0 +1,191 @@
+@media (max-width: 1200px)
+    header
+        .menu_item
+            padding: 0 16px
+        .menu_link
+            font-size: 13px
+    .promo_title
+        margin-top: 20px
+        font-size: 50px
+    .promo_subtitle
+        font-size: 32px
+    .advantages_round
+        width: 100px
+        height: 100px
+    .mobile_item
+        width: 100%
+@media ( max-width: 991px )
+    header
+        .menu
+            padding: 13px 0
+            &_item
+                padding: 0 12px
+            &_link
+                font-size: 12px
+        .subheader_logo__text
+            font-size: 12px
+        .subheader_call__number
+            font-size: 20px
+    .promo_title
+        font-size: 40px
+    .promo_descr
+        font-size: 16px
+    .advantages_descr
+        width: 60%
+    .mobile_item
+        height: 250px
+        &_subtitle
+            font-size: 18px
+    .option_img
+        width: 100%
+    .conditions_list
+        li
+            font-size: 15px
+    .footer_social
+        width: 80px
+        display: flex
+        flex-wrap: wrap
+        margin: 0
+        a
+            margin-top: 8px
+    .footer_stores
+        margin: 0
+        a
+            display: block
+            margin-top: 4px
+    .footer_link
+        margin: 0
+
+@media (max-width: 767px)
+    header
+        .menu
+            position: fixed
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            flex-direction: column
+            justify-content: space-evenly
+            background: rgba(0, 0, 0, .9)
+            transition: 0.5s all
+            &_active
+                left: 0
+            &_item
+                width: 90%
+                text-align: center
+                border: none
+            &_link
+                font-size: 18px
+        .subheader_logo
+            margin-top: 26px
+        .subheader_logo__text
+            font-size: 11px
+        .subheader_btn
+            display: block
+            margin: 2px auto 10px
+            width: 100%
+        .subheader__btn_desktop
+            display: none
+        .subheader_call
+            margin-top: 10px
+        .subheader_call__text
+            display: none
+        .subheader_call__number
+            font-size: 20px
+            text-align: center
+
+        nav
+            .humburger
+                display: block
+                position: absolute
+                right: 14px
+                top: 50%
+                transform: translateY(-50%)
+                width: 32px
+                height: 16px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                span
+                    z-index: 99
+                    width: 100%
+                    height: 2px
+                    background: #fff
+                    transition: 0.5s all
+                &_active
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    span
+
+                        &:first-child
+                            transform: rotate(45deg)
+                        &:nth-child(2)
+                            display: none
+                        &:last-child
+                            transform: rotate(-45deg)
+                            margin-top: -1px
+    .promo_title
+        font-size: 36px
+    .promo_subtitle
+        font-size: 28px
+    .promo_btn
+        margin-top: 80px
+        width: 240px
+        height: 56px
+        font-size: 15px
+    .title
+        font-size: 28px
+    .subtitle
+        font-size: 14px
+    .advantages_descr
+        width: 75%
+    .option
+        min-height: 680px
+    .footer
+        .footer_links
+            display: flex
+            justify-content: space-between
+            margin: 0
+            .top_line
+                display: flex
+                flex-direction: column
+                margin-right: 30px
+            .middle_line
+                margin: 0
+                display: flex
+                flex-direction: column
+                a
+                    margin-top: 4px
+            .bot_line
+                display: none
+@media ( max-width: 575px )
+    header
+        .subheader_logo__text
+            display: none
+        .subheader_call__number
+            font-size: 14px
+        .subheader_btn
+            font-size: 12px
+            height: 36px
+    .promo_title
+        font-size: 34px
+        line-height: 36px
+    .promo_subtitle
+        font-size: 20px
+    .promo_descr
+        font-size: 13px
+    .promo_btn
+        margin-top: 30px
+        width: 210px
+        height: 50px
+        font-size: 14px
+    .advantages
+        &_item
+            flex-wrap: wrap
+        &_round
+            margin: 0 auto
+        &_descr
+            margin-top: 10px
+            width: 100%
+            text-align: center
