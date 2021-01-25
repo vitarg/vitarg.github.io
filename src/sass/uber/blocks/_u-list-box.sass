@@ -1,0 +1,37 @@
+.u-list-box
+    margin-top: 33px
+    &__header
+        color: #1ca8c3
+        font-size: 22px
+    &__header_red
+        color: $second-color
+        margin-top: 62px
+    &__list
+        padding-left: 50px
+        li
+            margin-top: 8px
+            list-style-type: none
+            color: #222222
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            text-align: left
+            position: relative
+            &::before
+                position: absolute
+                left: -26px
+                top: 2px
+                content: ''
+                display: block
+                width: 21px
+                height: 20px
+                background: url('../icons/uber/check_blue.png') center center/cover no-repeat
+
+    &__list_red
+        color: $second-color
+        li
+            &::before
+                background: url('../icons/uber/check_red.png') center center/cover no-repeat
+    &__descr
+        color: #1ca8c3
+        font-weight: 300

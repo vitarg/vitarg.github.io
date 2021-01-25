@@ -1,0 +1,58 @@
+.u-mobile-item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    margin-top: 20px
+    padding: 92px 0 35px
+    width: 320px
+    height: 280px
+    &__subtitle
+        color: #ffffff
+        font-size: 24px
+        line-height: 31px
+        text-align: center
+        text-transform: uppercase
+    &__plus
+        position: relative
+        border-radius: 50%
+        width: 26px
+        height: 26px
+        background-color: #000000
+        &::before
+            position: absolute
+            left: 50%
+            bottom: 12px
+            transform: translate(-50%)
+            content: ''
+            display: block
+            width: 14px
+            height: 2px
+            background: $main-color
+        &::after
+            position: absolute
+            left: 50%
+            transform: translate(-50%)
+            bottom: 6px
+            content: ''
+            display: block
+            width: 2px
+            height: 14px
+            background: $main-color
+        &:hover
+            &::before, &::after
+                transition: 0.3s all
+                background: $second-color
+
+    &_1
+        background: url('../img/uber/mobile_item_1.jpg') center center/cover no-repeat
+    &_2
+        background: url('../img/uber/mobile_item_2.jpg') center center/cover no-repeat
+    &_3
+        background: url('../img/uber/mobile_item_3.jpg') center center/cover no-repeat
+    &_4
+        background: url('../img/uber/mobile_item_4.jpg') center center/cover no-repeat
+    &_5
+        background: url('../img/uber/mobile_item_5.jpg') center center/cover no-repeat
+    &_6
+        background: url('../img/uber/mobile_item_6.jpg') center center/cover no-repeat
