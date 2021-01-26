@@ -1,0 +1,42 @@
+.m-title-box
+    padding: 0 12px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__devider_left, &__devider_right
+        flex: 1 1 auto
+        height: 2px
+        background: #E9C46A
+    &__header
+        padding: 0 20px
+        font-size: 26px
+        color: #264653
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        position: relative
+
+    &__devider_left
+        position: relative
+        &::before
+            position: absolute
+            left: -11px
+            top: -5px
+            content: ''
+            display: block
+            height: 12px
+            width: 12px
+            border: 2px solid #E9C46A
+            border-radius: 50%
+    &__devider_right
+        position: relative
+        &::before
+            position: absolute
+            right: -11px
+            top: -5px
+            content: ''
+            display: block
+            height: 12px
+            width: 12px
+            border: 2px solid #E9C46A
+            border-radius: 50%
