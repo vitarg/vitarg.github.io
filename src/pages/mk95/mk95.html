@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Портал культурных учреждений Чеченской Республики</title>
-        <link rel="stylesheet" href="src/css/style.css" />
-        <link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
-        <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="../../css/style.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,300&display=swap"
@@ -14,70 +14,70 @@
         />
     </head>
     <body>
-        <header class="header">
+        <header class="m-header">
             <div class="container">
-                <div class="logo">
-                    <a href="#" class="logo_link">
-                        <img src="src/icons/logo.svg" alt="" class="logo_img" />
+                <div class="m-header__logo">
+                    <a href="#" class="m-header__link">
+                        <img src="../../icons/mk95/logo.svg" alt="" class="m-header__img" />
                     </a>
                 </div>
-                <div class="header__title">
+                <div class="m-header__title">
                     ПОРТАЛ <br />
-                    <span class="header__title_reduced">
+                    <span class="m-header__title_reduced">
                         КУЛЬТУРНЫХ УЧРЕЖДЕНИЙ
-                        <span class="header__title_green">
+                        <span class="m-header__title_green">
                             ЧЕЧЕНСКОЙ РЕСПУБЛИКИ</span>
                         </span>
                 </div>
-                <form action="#" class="form">
-                    <div class="input-wrapper">
+                <form action="#" class="m-form">
+                    <div class="m-form__content">
                         <input
                             type="text"
-                            class="form__login"
+                            class="m-form__login"
                             placeholder="Логин"
                         />
                         <input
                             type="password"
-                            class="form__password"
+                            class="m-form__password"
                             placeholder="Пароль"
                         />
                     </div>
 
-                    <button class="form__btn">Войти</button>
+                    <button class="m-form__btn">Войти</button>
                 </form>
             </div>
         </header>
-        <nav class="menu">
+        <nav class="m-menu">
             <div class="container">
-                <div class="menu__wrapper">
-                    <div class="menu__item">
-                        <a href="#" class="menu__link">Главная</a>
+                <div class="m-menu__wrapper">
+                    <div class="m-menu__item">
+                        <a href="#" class="m-menu__link">Главная</a>
                     </div>
-                    <div class="menu__item">
-                        <a href="src/news.html" class="menu__link">Новости</a>
+                    <div class="m-menu__item">
+                        <a href="src/news.html" class="m-menu__link">Новости</a>
                     </div>
-                    <div class="menu__item">
-                        <a href="src/sites.html" class="menu__link">Сайты</a>
+                    <div class="m-menu__item">
+                        <a href="src/sites.html" class="m-menu__link">Сайты</a>
                     </div>
-                    <div class="menu__item">
-                        <a href="src/vacancy.html" class="menu__link">Вакансии</a>
+                    <div class="m-menu__item">
+                        <a href="src/vacancy.html" class="m-menu__link">Вакансии</a>
                     </div>
-                    <div class="menu__item">
-                        <a href="https://mk-chr.ru/" class="menu__link">Министерство культуры</a>
+                    <div class="m-menu__item">
+                        <a href="https://mk-chr.ru/" class="m-menu__link">Министерство культуры</a>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Секция с новостями -->
-        <section class="news">
+        <section class="m-news">
             <div class="container">
                 <!-- Блок с заголовком -->
-                <div class="title">
-                    <div class="title__devider_left"></div>
+                <div class="m-news__title title">
+                    <div class="m-news__divider m-news__divider_left divider_left"></div>
                     <div class="title_header">НОВОСТИ</div>
-                    <div class="title__devider_right"></div>
+                    <div class="m-news__divider m-news__divider_right devider_right"></div>
                 </div>
-                <div class="news_wrapper">
+                <div class="news__wrapper">
                     <!-- блок с раскрытыми новостями -->
                     <div class="reveal">
                         <!-- главный большой блок -->
