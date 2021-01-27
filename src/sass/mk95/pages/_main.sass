@@ -32,7 +32,7 @@
         padding: 10px
         font-size: 18px
         color: #ffffff
-        background: rgba(0, 0, 0, 0.5)
+        background: rgba(0, 0, 0, 0.7)
     &__secondary
         margin-top: 20px
         display: flex
@@ -48,6 +48,7 @@
         height: 185px
         background: url('https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg') center center/cover no-repeat
     &__secondary-data
+        font-size: 13px
         width: 60px
         background: #2A9D8F
         border-radius: 2px
@@ -57,8 +58,9 @@
         text-align: center
         line-height: 24px
     &__secondary-text
+        font-size: 13px
         color: #000000
-        padding: 20px 10px
+        padding: 10px 8px
         border-radius: 0 0 4px 4px
         width: 246px
         background: #e5e5e5
@@ -69,7 +71,7 @@
         li
             margin: 0
             padding: 0
-            font-size: 16px
+            font-size: 13px
             display: flex
             margin-top: 10px
             &::before
@@ -79,8 +81,8 @@
                 padding: 10px
                 background: #A8DADC
                 color: #264653
-                border-radius: 4px 0 0 4px
-                font-size: 14px
+                border-radius: 3px 0 0 3px
+                font-size: 12px
                 content: '17.04.2020'
             a
                 display: flex
@@ -90,7 +92,7 @@
                 text-decoration: none
                 color: #264653
                 background: #ffffff
-                border-radius: 0 4px 4px 0
+                border-radius: 0 3px 3px 0
                 transition: 0.5s all
                 &:hover
                     background: rgba(42, 157, 143, .2 )
@@ -101,7 +103,7 @@
         text-decoration: none
         background: #ffffff
         border: none
-        border-radius: 14px
+        border-radius: 100px
         color: #457B9D
         cursor: pointer
         -webkit-transform: perspective(1px) translateZ(0)
@@ -113,6 +115,7 @@
         transition-property: color
         -webkit-transition-duration: 0.3s
         transition-duration: 0.3s
+        outline: none!important
         &::before
             content: ''
             position: absolute
@@ -124,7 +127,7 @@
             background: #2A9D8F
             -webkit-transform: scaleX(0)
             transform: scaleX(0)
-            border-radius: 14px
+            border-radius: 100px
             -webkit-transform-origin: 50%
             transform-origin: 50%
             -webkit-transition-property: transform
@@ -138,7 +141,7 @@
         &:hover:before, &:focus:before, &:active:before
             -webkit-transform: scaleX(1)
             transform: scaleX(1)
-            border-radius: 14px
+            border-radius: 100px
 .vacancy
     padding: 20px 0 40px
     &__wrapper
