@@ -16,7 +16,10 @@
         justify-content: space-between
         width: 512px
         height: 292px
+        transition: 300ms all
         background: url('http://ssedu.ru//index.php?component=download&file=12b95e8e855189e210ed0a1e4e610f02b27c8f4591242d55ef261dd06d9d3e37&view=1') center center/cover no-repeat
+        &:hover
+            box-shadow: 0 14px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
     &__data
         width: 84px
         background: #2A9D8F
@@ -36,9 +39,14 @@
     &__secondary
         margin-top: 20px
         display: flex
+        justify-content: space-between
+        a
+            transition: 200ms all
+            &:hover
+                border-radius: 4px
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
     &__item_left
         padding: 10px
-        margin-right: 20px
         width: 246px
         height: 185px
         background: url('https://i.pinimg.com/originals/bf/82/f6/bf82f6956a32819af48c2572243e8286.jpg') center center/cover no-repeat
@@ -74,6 +82,10 @@
             font-size: 13px
             display: flex
             margin-top: 10px
+            transition: 300ms all
+            &:hover
+                box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22)
+                border-radius: 4px
             &::before
                 display: flex
                 justify-content: center
@@ -84,6 +96,8 @@
                 border-radius: 3px 0 0 3px
                 font-size: 12px
                 content: '17.04.2020'
+            &:first-child
+                margin-top: 0
             a
                 display: flex
                 align-items: center
@@ -94,8 +108,6 @@
                 background: #ffffff
                 border-radius: 0 3px 3px 0
                 transition: 0.5s all
-                &:hover
-                    background: rgba(42, 157, 143, .2 )
     &__btn
         margin: 10px auto 0
         display: block
@@ -159,7 +171,7 @@
         display: flex
         align-items: center
     &__header-icon
-        width: 30px
+        width: 2rem
         img
             width: 100%
     &__item-title
