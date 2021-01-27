@@ -1,10 +1,10 @@
-let menuBtn = document.querySelector('.humburger')
+let menuBtn = document.querySelector('.u-humburger')
 
 function humburger() {
-    let menu = document.querySelector('.menu')
+    let menu = document.querySelector('.u-menu')
 
-    menu.classList.toggle('menu_active')
-    menuBtn.classList.toggle('humburger_active')
+    menu.classList.toggle('u-menu__active')
+    menuBtn.classList.toggle('u-humburger_active')
 }
 
 menuBtn.addEventListener('click', humburger)
