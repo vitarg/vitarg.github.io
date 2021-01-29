@@ -1,29 +1,27 @@
-@media ( max-width: 1200px )
-    .header
+@media ( max-width: 1199px )
+    .m-header
         &__title
-            font-size: 32px
-            br
-                display: none
+            font-size: 28px
+            line-height: 30px
             span
-                font-size: 21px
-    .form
-        input
-            width: 99px
-        &__btn
-            margin-top: 8px
-            width: 203px
-    .news
-        .short
-            width: 43%
-            &__list
-                li
-                    &:last-child
-                        display: none
+                font-size: 20px
+    .m-menu
+        margin-top: 0
+
+    .short
+        width: 43%
+        &__list
+            li
+                &:last-child
+                    display: none
+    .vacancy
+        &__item-title
+            font-size: 14px
 
 @media ( max-width: 991px )
-    .header
-        .logo
-            width: 80px
+    .m-header
+        &__logo
+            width: 70px
             margin-right: 4px
         &__title
             font-size: 22px
@@ -33,14 +31,11 @@
             span
                 font-size: 15px
 
-    .form
-        input
-            width: 90px
-            height: 22px
-        &__btn
-            margin-top: 8px
-            width: 184px
-            height: 22px
+    .m-form
+
+    .m-menu
+        a
+            font-size: 12px
 
     .reveal__main-item
         width: 300px
@@ -56,3 +51,7 @@
         width: 10px
         height: 10px
         top: -6px
+@media ( max-width: 767px )
+    .m-menu
+        a
+            font-size: 12px
