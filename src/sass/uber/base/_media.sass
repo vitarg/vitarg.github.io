@@ -1,28 +1,27 @@
 @media (max-width: 1200px)
-    .menu
+    .u-menu
         &__item
-            padding: 0 16px
+            padding: 0 16px!important
         &__link
-            font-size: 13px
+            font-size: 13px!important
     .u-promo
         &__title
             margin-top: 20px
-            font-size: 50px
+            font-size: 50px!important
         &__subtitle
-            font-size: 32px
-    .advantages
+            font-size: 32px!important
+    .u-item
         &__round
             width: 100px
             height: 100px
     .u-mobile-item
         width: 100%
 @media ( max-width: 991px )
-
     .u-menu
         padding: 13px 0
         &__item
             padding: 0 12px
-        &_link
+        &__link
             font-size: 12px
     .u-subheader
         &__text
@@ -34,7 +33,7 @@
             font-size: 40px
         &__descr
             font-size: 16px
-    .advantages
+    .u-item
         &__descr
             width: 60%
     .u-mobile-item
@@ -78,11 +77,11 @@
         transition: 0.5s all
         &__active
             left: 0
-        &_item
+        &__item
             width: 90%
             text-align: center
             border: none
-        &_link
+        &__link
             font-size: 18px
     .u-subheader
         &__logo
@@ -120,7 +119,7 @@
             height: 2px
             background: #fff
             transition: 0.5s all
-            &_active
+            &__active
                 display: flex
                 justify-content: center
                 align-items: center
@@ -133,42 +132,44 @@
                         &:last-child
                             transform: rotate(-45deg)
                             margin-top: -1px
-    .promo_title
-        font-size: 36px
-    .promo_subtitle
-        font-size: 28px
-    .promo_btn
-        margin-top: 80px
-        width: 240px
-        height: 56px
-        font-size: 15px
+    .promo
+        &__title
+            font-size: 36px
+        &__subtitle
+            font-size: 28px
+        &__btn
+            margin-top: 80px
+            width: 240px
+            height: 56px
+            font-size: 15px
     .title
         font-size: 28px
     .subtitle
         font-size: 14px
-    .advantages_descr
-        width: 75%
+    .u-item
+        &__descr
+            width: 75%
     .option
         min-height: 680px
-    .footer
-        .footer_links
+    .u-footer
+        &__links
             display: flex
             justify-content: space-between
             margin: 0
-            .top_line
-                display: flex
-                flex-direction: column
-                margin-right: 30px
-            .middle_line
-                margin: 0
-                display: flex
-                flex-direction: column
-                a
-                    margin-top: 4px
-            .bot_line
-                display: none
+        .top-line
+            display: flex
+            flex-direction: column
+            margin-right: 30px
+        .middle-line
+            margin: 0
+            display: flex
+            flex-direction: column
+            a
+                margin-top: 4px
+        .bot-line
+            display: none
 @media ( max-width: 575px )
-    header
+    .u-header
         &__logo__text
             display: none
         &__call__number
@@ -176,24 +177,24 @@
         &__btn
             font-size: 12px
             height: 36px
-    .promo_title
-        font-size: 34px
-        line-height: 36px
-    .promo_subtitle
-        font-size: 20px
-    .promo_descr
-        font-size: 13px
-    .promo_btn
-        margin-top: 30px
-        width: 210px
-        height: 50px
-        font-size: 14px
-    .advantages
-        &_item
-            flex-wrap: wrap
-        &_round
+    .promo
+        &__title
+            font-size: 34px
+            line-height: 36px
+        &__subtitle
+            font-size: 20px
+        &__descr
+            font-size: 13px
+        &__btn
+            margin-top: 30px
+            width: 210px
+            height: 50px
+            font-size: 14px
+    .u-item
+        flex-wrap: wrap
+        &__round
             margin: 0 auto
-        &_descr
+        &__descr
             margin-top: 10px
             width: 100%
             text-align: center
