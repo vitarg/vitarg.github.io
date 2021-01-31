@@ -1,52 +1,75 @@
 @media (max-width: 1200px)
     .u-menu
         &__item
-            padding: 0 16px!important
+            padding: 0 16px
         &__link
-            font-size: 13px!important
+            font-size: 13px
     .u-promo
         &__title
             margin-top: 20px
-            font-size: 50px!important
+            font-size: 50px
         &__subtitle
-            font-size: 32px!important
+            font-size: 32px
     .u-item
         &__round
             width: 100px
             height: 100px
+        &__descr
+            width: 300px
     .u-mobile-item
         width: 100%
+        padding-top: 100px
 @media ( max-width: 991px )
     .u-menu
-        padding: 13px 0
+        &__list
+            padding: 13px 0
         &__item
             padding: 0 12px
         &__link
             font-size: 12px
     .u-subheader
-        &__text
+        height: auto
+        &__logo-label
             font-size: 12px
-        &__number
+        &__call-number
             font-size: 20px
     .u-promo
         &__title
             font-size: 40px
         &__descr
             font-size: 16px
+        &__btn
+            margin-top: 90px
     .u-item
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+        border: 1px solid $main-color
+        padding: 10px
+        border-radius: 4px
+        height: 95%
         &__descr
-            width: 60%
+            text-align: center
     .u-mobile-item
         height: 250px
-        &_subtitle
+        padding: 100px 4px 30px
+        &__subtitle
+            line-height: 22px
             font-size: 18px
     .option
+        min-height: 820px
         &__img
             width: 100%
     .u-list-box
+        &__header
+            font-size: 20px
         &__list
             li
-                font-size: 15px
+                font-size: 14px
+    .world
+        min-height: 600px
+        a
+            margin-top: 350px
     .u-footer
         &__social
             width: 80px
