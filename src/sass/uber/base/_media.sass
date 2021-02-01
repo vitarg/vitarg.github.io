@@ -87,7 +87,6 @@
             margin: 0
 
 @media (max-width: 767px)
-
     .u-menu
         position: fixed
         top: 0
@@ -98,7 +97,7 @@
         justify-content: space-evenly
         background: rgba(0, 0, 0, .9)
         transition: 0.5s all
-        &__active
+        &_active
             left: 0
         &__item
             width: 90%
@@ -119,9 +118,9 @@
             display: none
         &__call
             margin-top: 10px
-        &__call__text
+        &__call-text
             display: none
-        &__call__number
+        &__call-number
             font-size: 20px
             text-align: center
 
@@ -142,20 +141,19 @@
             height: 2px
             background: #fff
             transition: 0.5s all
-            &__active
-                display: flex
-                justify-content: center
-                align-items: center
-                span
-
-                    &:first-child
-                        transform: rotate(45deg)
-                        &:nth-child(2)
-                            display: none
+        &_active
+            display: flex
+            justify-content: center
+            align-items: center
+            span
+                &:first-child
+                    transform: rotate(45deg)
+                    &:nth-child(2)
+                        display: none
                         &:last-child
                             transform: rotate(-45deg)
                             margin-top: -1px
-    .promo
+    .u-promo
         &__title
             font-size: 36px
         &__subtitle
