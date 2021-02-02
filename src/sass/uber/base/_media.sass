@@ -88,16 +88,17 @@
 
 @media (max-width: 767px)
     .u-menu
-        position: fixed
-        top: 0
-        left: -100%
-        width: 50%
-        height: 100vh
-        flex-direction: column
-        justify-content: space-evenly
-        background: rgba(0, 0, 0, .9)
-        transition: 0.5s all
-        &_active
+        &__list
+            position: fixed
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            flex-direction: column
+            justify-content: space-evenly
+            background: rgba(0, 0, 0, .9)
+            transition: 0.5s all
+        &__list_active
             left: 0
         &__item
             width: 90%
@@ -105,6 +106,34 @@
             border: none
         &__link
             font-size: 18px
+    .u-humburger
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: absolute
+        right: 14px
+        top: 50%
+        transform: translateY(-50%)
+        width: 32px
+        height: 16px
+        span
+            z-index: 99
+            width: 100%
+            height: 2px
+            background: #fff
+            transition: 0.5s all
+        &_active
+            display: flex
+            justify-content: center
+            align-items: center
+            span
+                &:first-child
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: rotate(-45deg)
+                    margin-top: -1px
     .u-subheader
         &__logo
             margin-top: 26px
@@ -124,35 +153,6 @@
             font-size: 20px
             text-align: center
 
-    .u-humburger
-        display: block
-        position: absolute
-        right: 14px
-        top: 50%
-        transform: translateY(-50%)
-        width: 32px
-        height: 16px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        span
-            z-index: 99
-            width: 100%
-            height: 2px
-            background: #fff
-            transition: 0.5s all
-        &_active
-            display: flex
-            justify-content: center
-            align-items: center
-            span
-                &:first-child
-                    transform: rotate(45deg)
-                    &:nth-child(2)
-                        display: none
-                        &:last-child
-                            transform: rotate(-45deg)
-                            margin-top: -1px
     .u-promo
         &__title
             font-size: 36px
