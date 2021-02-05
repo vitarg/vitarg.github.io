@@ -16,6 +16,11 @@
     <body>
         <header class="m-header">
             <div class="container">
+                <div class="m-humburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="m-header__logo">
                     <a href="#" class="m-header__link">
                         <img
@@ -34,6 +39,11 @@
                         >
                     </span>
                 </div>
+                <div class="m-header__sign-in_mobile">
+                    <a href="#">
+                        <img src="../../icons/mk95/sign-in.svg" alt="" />
+                    </a>
+                </div>
                 <form action="#" class="m-form">
                     <div class="m-form__content">
                         <input
@@ -47,40 +57,44 @@
                             placeholder="Пароль"
                         />
                     </div>
-
                     <button class="m-form__btn">Войти</button>
                 </form>
             </div>
         </header>
+
         <nav class="m-menu">
             <div class="container">
-                <div class="m-menu__wrapper">
-                    <div class="m-menu__item">
+                <ul class="m-menu__list">
+                    <li class="m-menu__item">
                         <a href="#" class="m-menu__link">Главная</a>
-                    </div>
-                    <div class="m-menu__item">
+                    </li>
+                    <li class="m-menu__item">
                         <a href="../mk95/news.html" class="m-menu__link"
                             >Новости</a
                         >
-                    </div>
-                    <div class="m-menu__item">
+                    </li>
+                    <li class="m-menu__item">
                         <a href="../mk95/sites.html" class="m-menu__link"
                             >Сайты</a
                         >
-                    </div>
-                    <div class="m-menu__item">
+                    </li>
+                    <li class="m-menu__item">
                         <a href="../mk95/vacancy.html" class="m-menu__link"
                             >Вакансии</a
                         >
-                    </div>
-                    <div class="m-menu__item">
+                    </li>
+                    <li class="m-menu__item">
                         <a href="https://mk-chr.ru/" class="m-menu__link"
                             >Министерство культуры</a
                         >
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </nav>
+        <div class="m-header__title m-header__title_mobile">
+            ПОРТАЛ КУЛЬТУРНЫХ УЧРЕЖДЕНИЙ
+            <span class="m-header__title_green"> ЧЕЧЕНСКОЙ РЕСПУБЛИКИ</span>
+        </div>
         <!-- Секция с новостями -->
         <section class="m-news">
             <div class="container">
