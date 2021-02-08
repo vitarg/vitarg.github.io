@@ -165,6 +165,22 @@
         &__item_left, &__item_right
             width: 40%
             height: 140px
+
+    .m-title-box
+        flex-wrap: wrap
+        padding: 0
+    .m-title-box__header
+        width: 100%
+    .m-title-box__devider_left
+        display: none
+    .m-title-box__devider_right
+        height: 1.5px
+        width: 100%
+        background: linear-gradient(to right, rgba(255, 255, 255, .0), #E9C46A, rgba(255, 255, 255, .0))
+        &::before
+            width: 0
+            height: 0
+            border: none
 @media ( max-width: 575px )
     .vacancy
         padding-top: 0
@@ -176,8 +192,11 @@
     .m-header
         &__title_mobile
             font-size: 18px
+            line-height: 1.2
             span
                 font-size: 18px
+    .m-menu
+        width: 60%
     .reveal
         &__main-item
             height: 260px
@@ -202,3 +221,6 @@
         &__email-text
             font-size: 13px
             padding: 0 8px
+@media (max-width: 320px)
+    .m-menu
+        width: 80%
