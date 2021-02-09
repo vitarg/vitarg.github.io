@@ -198,7 +198,7 @@
     .m-menu
         width: 60%
     .m-title-box__header
-        font-size: 24px;
+        font-size: 24px
     .reveal
         &__main-item
             height: 260px
@@ -219,6 +219,8 @@
             font-size: 13px
         &__item-descr
             font-size: 13px
+        &__wrapper
+            margin-top: 0
     .m-footer
         &__icon
             display: none
@@ -231,4 +233,12 @@
 @media (max-width: 320px)
     .m-menu
         width: 80%
-    
+    .reveal
+        &__main-item
+            height: 220px
+        &__item_left, &__item_right
+            display: none
+        &__secondary
+            margin-top: 0
+        &__secondary-text
+            border-radius: 8px
