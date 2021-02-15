@@ -185,6 +185,10 @@
             height: 0
             border: none
 @media ( max-width: 575px )
+    .m-header
+        &__title_mobile
+            line-height: 1.2
+            font-size: 18px
     .vacancy
         padding-top: 0
         &__item-descr
@@ -194,10 +198,10 @@
 @media ( max-width: 415px )
     .m-header
         &__title_mobile
-            font-size: 18px
+            font-size: 1rem
             line-height: 1.2
             span
-                font-size: 18px
+                font-size: 1rem
     .m-menu
         width: 60%
     .m-title-box__header
@@ -228,10 +232,13 @@
         &__icon
             display: none
         &__site-descr
-            font-size: 13px
+            font-size: 0.85rem
             padding: 0 8px
+        &__site
+            a
+                font-size: 0.85rem
         &__email-text
-            font-size: 13px
+            font-size: 0.85rem
             padding: 0 8px
 @media (max-width: 320px)
     .m-menu

@@ -1,0 +1,23 @@
+.s-tabs
+    &__one
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 0 0 40px
+    &__item
+        margin-top: 20px
+        width: 49%
+        background: #A8DADC
+        padding: 20px
+        border-radius: 0 0 22px 0
+        transition: 0.3s all
+        cursor: pointer
+        display: flex
+        align-items: center
+        &:hover
+            background: #E9C46A
+    &>section
+        display: none
+    &__input1:checked ~ .s-tabs__one, &__input2:checked ~ .s-tabs__two, &__input3:checked ~ .s-tabs__three, &__input4:checked ~ .s-tabs__four, &__input5:checked ~ .s-tabs__five, &__input6:checked ~ .s-tabs__six, &__input7:checked ~ .s-tabs__seven
+        display: block

@@ -18,3 +18,37 @@
     .second-item
         &__date
             font-size: 15px
+@media (max-width: 575px)
+    .m-title-box__header
+        font-size: 23px
+    .n-news
+        margin-top: 20px
+    .n-item
+        &__header
+            height: 240px
+        &__date
+            font-size: 0.8rem
+        &__text
+            font-size: 0.9rem
+        &__footer
+            height: auto
+            padding-bottom: 1rem
+    .second-item
+        flex-direction: column
+        &__header, &__footer
+            width: 100%
+        &__date
+            font-size: 0.8rem
+        &__text
+            font-size: 0.9rem
+    .m-footer
+        padding: 0 15px
+        &__site
+            a
+                font-size: 0.9rem
+        &__email-text
+            font-size: 0.9rem
+@media (max-width: 375px)
+    .n-item
+        &__header
+            height: 200px
