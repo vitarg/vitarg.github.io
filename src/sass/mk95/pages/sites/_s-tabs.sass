@@ -1,4 +1,5 @@
 .s-tabs
+    margin-top: 30px
     &__one
         margin-top: 20px
         display: flex
@@ -17,7 +18,21 @@
         align-items: center
         &:hover
             background: #E9C46A
+    label
+        font-size: 0.85em
+        padding: 14px 8px
+        background: #fff
+        border-radius: 4px
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .1)
+        cursor: pointer
+    &>input[type="radio"]
+        width: 0
+        height: 0
+        position: absolute
+        z-index: -1
     &>section
         display: none
     &__input1:checked ~ .s-tabs__one, &__input2:checked ~ .s-tabs__two, &__input3:checked ~ .s-tabs__three, &__input4:checked ~ .s-tabs__four, &__input5:checked ~ .s-tabs__five, &__input6:checked ~ .s-tabs__six, &__input7:checked ~ .s-tabs__seven
-        display: block
+        display: flex
+    &>input[type="radio"]:checked+label
+        color: #E63946
