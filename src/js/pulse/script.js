@@ -17,11 +17,12 @@ $(document).ready(function () {
 let advanceLink = document.querySelector(".catalog-item__link");
 let content = document.querySelector(".catalog-item__content");
 let list = document.querySelector(".catalog-item__list");
-
+let back = document.querySelector(".catalog-item__back");
 
 function toggleList() {
-    content.classList.toggle('catalog-item__content_active')
-    list.classList.toggle('catalog-item__list_active')
+    content.classList.toggle("catalog-item__content_active");
+    list.classList.toggle("catalog-item__list_active");
 }
 
 advanceLink.addEventListener("click", toggleList);
+back.addEventListener("click", toggleList);

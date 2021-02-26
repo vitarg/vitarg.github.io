@@ -1,7 +1,6 @@
 .catalog-item
     width: 25%
     border: 2px solid #e8e8e8
-    margin: 8px
     padding: 20px
     overflow: hidden
     img
@@ -24,7 +23,9 @@
         margin: 10px 0
         border: none
         border-top: 1px solid #e8e8e8
-    a
+    &__link, &__back
+        text-transform: uppercase
+        cursor: pointer
         display: block
         color: $red
         text-align: center
@@ -63,23 +64,15 @@
         width: 50%
         padding-left: 0
         margin-bottom: 0
-        list-style-type: none
-        margin-right: 20px
+        list-style-type: square
         transform: translateX(0%)
         &_active
-            margin-right: 0
             transform: translateX(-100%)
     &__list-item
+        margin-top: 8px
         font-size: 14px
         font-weight: 300
-        color: #555
+        color: $red
         position: relative
-        &::before
-            display: block
-            content: ''
-            background: $red
-            position: absolute
-            left: 0
-            top: 50%
-            width: 4px
-            height: 4px
+        span
+            color: #555
